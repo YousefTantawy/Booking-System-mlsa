@@ -11,7 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 string connectionString = "Server=127.0.0.1;Database=maindb;User ID=root;Password=Yousef13935823;";
 
 builder.Services.AddDbContext<MaindbContext>(options =>
-    options.UseMySQL(connectionString));
+    options.UseMySql(
+        connectionString,
+        ServerVersion.AutoDetect(connectionString)
+    ));
 
 builder.Services.AddScoped<TokenService>();
 

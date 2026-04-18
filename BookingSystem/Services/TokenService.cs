@@ -17,11 +17,20 @@ namespace BookingSystem.Services
 
         public string CreateToken(User user)
         {
+            string roleName = user.RoleId switch
+            {
+                1 => "Admin",
+                2 => "User",
+                3 => "Manager",
+                _ => "User"
+            };
+
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
                 new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Name, user.Email)                 
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Role, roleName)
             }; // This means the token returns User ID, Username and Email
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JwtSettings:Key"]));

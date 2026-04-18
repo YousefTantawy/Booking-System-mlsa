@@ -91,7 +91,7 @@
         }
       }
     },
-    "/api/booking/movies/{movieId}": {
+    "/api/booking/MovieDetails/{movieId}": {
       "get": {
         "tags": [
           "booking"
@@ -114,11 +114,30 @@
         }
       }
     },
-    "/api/Users/FriendList": {
-      "get": {
+    "/api/booking/BookTickets": {
+      "post": {
         "tags": [
-          "Users"
+          "booking"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBookingDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBookingDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBookingDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -126,15 +145,47 @@
         }
       }
     },
-    "/api/Users/FriendRequest": {
+    "/api/Manager/AddMovies": {
       "post": {
         "tags": [
-          "Users"
+          "Manager"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovieDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovieDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovieDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/DeleteMovie/{id}": {
+      "delete": {
+        "tags": [
+          "Manager"
         ],
         "parameters": [
           {
-            "name": "friendId",
-            "in": "query",
+            "name": "id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -148,15 +199,164 @@
         }
       }
     },
-    "/api/Users/AcceptRequest": {
+    "/api/Manager/AddHalls": {
       "post": {
         "tags": [
-          "Users"
+          "Manager"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHallDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHallDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHallDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/DeleteHall/{hallId}": {
+      "delete": {
+        "tags": [
+          "Manager"
         ],
         "parameters": [
           {
-            "name": "requesterId",
-            "in": "query",
+            "name": "hallId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/Seats": {
+      "post": {
+        "tags": [
+          "Manager"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSeatDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSeatDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSeatDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/Seats/{hallId}/{seatId}": {
+      "delete": {
+        "tags": [
+          "Manager"
+        ],
+        "parameters": [
+          {
+            "name": "hallId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "seatId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/AddShowtimes": {
+      "post": {
+        "tags": [
+          "Manager"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateShowtimeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateShowtimeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateShowtimeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manager/DeleteShowtime/{showtimeId}": {
+      "delete": {
+        "tags": [
+          "Manager"
+        ],
+        "parameters": [
+          {
+            "name": "showtimeId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -173,6 +373,108 @@
   },
   "components": {
     "schemas": {
+      "CreateBookingDto": {
+        "type": "object",
+        "properties": {
+          "showtimeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "seatIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateHallDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateMovieDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "releaseDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "genre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSeatDto": {
+        "type": "object",
+        "properties": {
+          "hallId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rowChar": {
+            "type": "string",
+            "nullable": true
+          },
+          "seatNumber": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateShowtimeDto": {
+        "type": "object",
+        "properties": {
+          "movieId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hallId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDto": {
         "required": [
           "email",
@@ -211,6 +513,10 @@
           "password": {
             "minLength": 6,
             "type": "string"
+          },
+          "roles": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -237,7 +543,7 @@
       "name": "booking"
     },
     {
-      "name": "Users"
+      "name": "Manager"
     }
   ]
 }

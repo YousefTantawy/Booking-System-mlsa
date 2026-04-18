@@ -5,7 +5,7 @@ namespace BookingSystem.Models;
 
 public partial class Seat
 {
-    public int Id { get; set; }
+    public int SeatId { get; set; }
 
     public int HallId { get; set; }
 

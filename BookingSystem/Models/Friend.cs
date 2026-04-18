@@ -5,7 +5,7 @@ namespace BookingSystem.Models;
 
 public partial class Friend
 {
-    public int Id { get; set; }
+    public int RequestId { get; set; }
 
     public int RequesterId { get; set; }
 

@@ -43,18 +43,24 @@
   },
   {
     "ContainingType": "BookingSystem.Controllers.bookingController",
-    "Method": "getMovies",
-    "RelativePath": "api/booking/Movies",
-    "HttpMethod": "GET",
+    "Method": "BookTickets",
+    "RelativePath": "api/booking/BookTickets",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BookingSystem.DTOs.CreateBookingDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "BookingSystem.Controllers.bookingController",
     "Method": "getMovieDetailed",
-    "RelativePath": "api/booking/movies/{movieId}",
+    "RelativePath": "api/booking/MovieDetails/{movieId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,25 +74,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookingSystem.Controllers.UsersController",
-    "Method": "AcceptFriendRequest",
-    "RelativePath": "api/Users/AcceptRequest",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "requesterId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BookingSystem.Controllers.UsersController",
-    "Method": "FriendList",
-    "RelativePath": "api/Users/FriendList",
+    "ContainingType": "BookingSystem.Controllers.bookingController",
+    "Method": "getMovies",
+    "RelativePath": "api/booking/Movies",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -94,17 +84,134 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookingSystem.Controllers.UsersController",
-    "Method": "FriendRequest",
-    "RelativePath": "api/Users/FriendRequest",
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "AddHall",
+    "RelativePath": "api/Manager/AddHalls",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "friendId",
+        "Name": "request",
+        "Type": "BookingSystem.DTOs.CreateHallDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "AddMovie",
+    "RelativePath": "api/Manager/AddMovies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BookingSystem.DTOs.CreateMovieDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "AddShowtime",
+    "RelativePath": "api/Manager/AddShowtimes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BookingSystem.DTOs.CreateShowtimeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "DeleteHall",
+    "RelativePath": "api/Manager/DeleteHall/{hallId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hallId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "DeleteMovie",
+    "RelativePath": "api/Manager/DeleteMovie/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "DeleteShowtime",
+    "RelativePath": "api/Manager/DeleteShowtime/{showtimeId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "showtimeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "AddSeat",
+    "RelativePath": "api/Manager/Seats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BookingSystem.DTOs.CreateSeatDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.Controllers.ManagerController",
+    "Method": "DeleteSeat",
+    "RelativePath": "api/Manager/Seats/{hallId}/{seatId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hallId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "seatId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

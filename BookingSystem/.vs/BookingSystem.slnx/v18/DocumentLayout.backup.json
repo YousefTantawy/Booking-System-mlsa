@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\dtos\\managerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:dtos\\managerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\models\\friend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:models\\friend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|d:\\learning material\\mlsa\\project\\bookingsystem\\models\\maindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F82C37-3296-2D60-B2F4-E493C7B6F810}|BookingSystem.csproj|solutionrelative:models\\maindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,74 +46,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswEUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T16:26:19.215Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Friend.cs",
-              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\Friend.cs",
-              "RelativeDocumentMoniker": "Models\\Friend.cs",
-              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\Friend.cs",
-              "RelativeToolTip": "Models\\Friend.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T17:40:56.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T10:57:59.304Z",
+              "WhenOpened": "2026-01-20T16:26:19.215Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T13:03:49.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T12:58:41.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingDtos.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\BookingDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\BookingDtos.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\BookingDtos.cs",
+              "RelativeToolTip": "DTOs\\BookingDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T12:04:02.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T13:29:41.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAYwCIAAABjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Controllers\\ManagerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T23:51:06.127Z",
+              "WhenOpened": "2026-04-13T18:05:58.067Z",
               "EditorCaption": ""
             },
             {
@@ -112,9 +139,35 @@
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
               "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Controllers\\BookingController.cs",
               "RelativeToolTip": "Controllers\\BookingController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAqwKEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T13:35:50.704Z"
+              "WhenOpened": "2026-02-04T13:35:50.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerDtos.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\ManagerDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\ManagerDtos.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\DTOs\\ManagerDtos.cs",
+              "RelativeToolTip": "DTOs\\ManagerDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T19:45:55.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MaindbContext.cs",
+              "DocumentMoniker": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\MaindbContext.cs",
+              "RelativeDocumentMoniker": "Models\\MaindbContext.cs",
+              "ToolTip": "D:\\Learning material\\MLSA\\Project\\BookingSystem\\Models\\MaindbContext.cs",
+              "RelativeToolTip": "Models\\MaindbContext.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAYwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T18:48:23.394Z"
             }
           ]
         }

@@ -14,7 +14,9 @@ namespace BookingSystem.DTOs
 		[Required]
 		[MinLength(6)]
 		public string Password { get; set; }
-	}
+
+		public int Roles { get; set; }
+    }
 
 	public class LoginDto
 	{

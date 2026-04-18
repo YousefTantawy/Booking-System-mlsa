@@ -5,7 +5,7 @@ namespace BookingSystem.Models;
 
 public partial class Showtime
 {
-    public int Id { get; set; }
+    public int ShowtimeId { get; set; }
 
     public int MovieId { get; set; }
 
@@ -22,4 +22,6 @@ public partial class Showtime
     public virtual Hall Hall { get; set; } = null!;
 
     public virtual Movie Movie { get; set; } = null!;
+
+    public virtual ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
 }

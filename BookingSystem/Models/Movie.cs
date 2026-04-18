@@ -5,7 +5,7 @@ namespace BookingSystem.Models;
 
 public partial class Movie
 {
-    public int Id { get; set; }
+    public int MovieId { get; set; }
 
     public string Title { get; set; } = null!;
 
@@ -13,7 +13,7 @@ public partial class Movie
 
     public int Duration { get; set; }
 
-    public DateTime? ReleaseDate { get; set; }
+    public DateOnly ReleaseDate { get; set; }
 
     public string? Language { get; set; }
 
