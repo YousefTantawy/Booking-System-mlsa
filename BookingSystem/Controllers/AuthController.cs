@@ -5,7 +5,7 @@ using BookingSystem.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace MotiveBackend.Controllers
+namespace BookingSystem.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
